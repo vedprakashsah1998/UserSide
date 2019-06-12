@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/bg">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bgcard"
+    android:layout_alignParentBottom="true"
+    android:padding="40dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Welcome Back!"
+        android:textColor="#0F0F0F"
+        android:textSize="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="This here add detail about article."
+        android:textColor="#3A3A3A"
+        android:textSize="18dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/bg_editext"
+        android:hint="Mobile No"
+        android:digits="0123456789"
+        android:id="@+id/mobileNo"
+        android:inputType="number"
+        android:paddingLeft="18dp" />
+
+    <Spinner
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_btn"
+        android:text="sign In"
+        android:textColor="#FFFFFF"
+        android:id="@+id/sign_in"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="28dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_book"
+            android:text="if you don't have account ?"
+            android:textColor="#363636"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/quicksand_book"
+            android:text="Sign Up"
+            android:id="@+id/sign_up"
+            android:textColor="#0933C5"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+</RelativeLayout>

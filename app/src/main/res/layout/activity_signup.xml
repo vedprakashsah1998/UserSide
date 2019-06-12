@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup"
+    android:background="#E1E7E5E5">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="Sign Up"
+                android:id="@+id/signup"
+                android:layout_centerHorizontal="true"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="32dp"
+                android:background="@drawable/bg_editext"
+                android:hint="Name"
+                android:inputType="text"
+                android:id="@+id/name"
+                android:layout_below="@id/signup"
+                android:paddingLeft="18dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="32dp"
+                android:background="@drawable/bg_editext"
+                android:hint="Pubg User Name"
+                android:inputType="text"
+                android:id="@+id/pubg_username"
+                android:layout_below="@id/name"
+                android:paddingLeft="18dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="32dp"
+                android:background="@drawable/bg_editext"
+                android:hint="E-mail"
+                android:inputType="text"
+                android:id="@+id/email"
+                android:layout_below="@id/pubg_username"
+                android:paddingLeft="18dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="32dp"
+                android:background="@drawable/bg_editext"
+                android:hint="Mobile No"
+                android:inputType="number"
+                android:id="@+id/mobile_no"
+                android:layout_below="@id/email"
+                android:paddingLeft="18dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/bg_btn"
+                android:text="sign In"
+                android:textColor="#FFFFFF"
+                android:id="@+id/sign_up1"
+                android:layout_below="@id/mobile_no"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
